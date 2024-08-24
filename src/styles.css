@@ -1,0 +1,121 @@
+.ReactModalPortal > div {
+    opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 500;
+}
+
+.modal-fondo {
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.modal {
+    background: white;
+    border-radius: 5px;
+    color: rgb(51, 51, 51);
+    display: inline;
+    max-height: 620px;
+    max-width: 500px;
+    outline: none;
+    padding: 10px;
+}
+
+.fab {
+    border-radius: 100%;
+    bottom: 25px;
+    font-size: 30px;
+    padding: 25px;
+    position: fixed;
+    right: 25px;
+    background-color: #1e66f5;
+    color: #eff1f5;
+}
+
+.fab-logout {
+    font-size: 16px;
+    background-color: #d20f39;
+    color: #eff1f5;
+    padding: 8px 16px;
+    border: 1px solid #d20f39;
+    border-radius: 8px;
+    width: auto;
+}
+
+.fab-logout:hover {
+    background-color: #7c7f93;
+    color: #eff1f5;
+    border: 1px solid #4c4f69;
+}
+
+.navbar .ml-auto {
+    margin-left: auto;
+}
+
+.calendar-fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1e66f5;
+    color: #eff1f5;
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.calendar-fab-danger {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #d20f39;
+    color: #eff1f5;
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.calendar-fab:hover,
+.calendar-fab-danger:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: #7287fd;
+}
+
+html,
+body {
+    background: linear-gradient(120deg, #ff9a84 0%, #a1abe2 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #4c4f69;
+    /* overflow-y: hidden; */
+}

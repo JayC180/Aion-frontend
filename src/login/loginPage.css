@@ -1,0 +1,95 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    padding: 30px;
+}
+
+.login-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background: #eff1f5;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 150px;
+    color: #4c4f69;
+}
+
+.login-register-forms {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.login-form,
+.register-form {
+    width: 48%;
+    color: #4c4f69;
+    margin: 0 4%;
+}
+
+.login-form h3,
+.register-form h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 10px;
+    box-shadow: none;
+    border: 1px solid #ccd0da;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #eff1f5;
+    color: #4c4f69;
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    display: block;
+    width: 100%;
+}
+
+.btn-primary {
+    background: #fda085;
+    color: white;
+    border: none;
+}
+
+.btn-secondary {
+    background: #f2c460;
+    color: white;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    color: white;
+    background: #a1abe2;
+}
+
+@media (max-width: 768px) {
+    .login-card {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .login-register-forms {
+        flex-direction: column;
+    }
+
+    .login-form,
+    .register-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
